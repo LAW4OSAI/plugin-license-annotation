@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "License Annotation Extension",
+  "description": "Annotate licenses on HTML pages",
+  "version": "1.0",
+  "permissions": [
+    "pageCapture",
+    "tabs",
+    "downloads"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "homepage_url": "https://www.utwente.nl/en/bms/law4osai/",
+  "action": {
+    "default_popup": "extension.html",
+    "default_icon": "law4osai_logo_small.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources":  ["annotation-bar.html"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"],
+      "js": ["content-script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

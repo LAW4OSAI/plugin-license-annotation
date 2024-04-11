@@ -1,0 +1,187 @@
+#annotation-bar{
+    position: fixed !important;
+    z-index: 2147483647 !important;
+    display: block !important;
+    width: 100% !important;
+    bottom: 00px !important;
+    left: 0px !important;
+    height: fit-content !important;
+    background-color: lightgray;
+    padding-left: 20px;
+}
+
+.annotation-unit{
+    clear: both;
+    float: left;
+}
+
+.picker-number{
+    float: left;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.content-picker{
+    float: left;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.license-picker{
+    float: left;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.none-btn{
+    padding-right: 20px;
+}
+
+.license-type {
+
+}
+
+#file-ctrl{
+    float: left;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-row{
+    clear: both;
+}
+
+
+#annotation-bar button, select{
+    background-color: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #222222;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    padding: 6px 10px;
+    margin-left: 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+}
+
+#annotation-list{
+    clear: both;
+}
+
+.button-23:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+}
+
+.button-23:active {
+    background-color: #F7F7F7;
+    border-color: #000000;
+    transform: scale(.96);
+}
+
+.button-23:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+.license-picker-highlight {
+    background-color: rgba(255, 0, 0, 0.3) !important;
+}
+
+.content-picker-highlight {
+    background-color: rgba(0, 0, 255, 0.3) !important;
+}
+
+.border-all {
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Space from this element (entire page) and others*/
+    padding: 0; /*space from content and border*/
+    border: solid blue;
+    border-width: thin;
+    overflow:hidden;
+    display:block;
+    box-sizing: border-box;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
